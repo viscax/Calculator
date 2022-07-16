@@ -100,6 +100,9 @@ numberButtons.forEach(button => {
     });
 });
 
+
+
+
 operatorButtons.forEach(button => {
     button.addEventListener('click', () => {
         if (num1 == ''){
@@ -185,3 +188,69 @@ delButton.addEventListener('click', () => {
         result.textContent = expression;
     }
 })
+
+document.addEventListener("keydown", function(e) {
+    if (e.key == 'Backspace' || e.key == "ArrowLeft"){
+        delButton.click();
+    }
+    else if (e.key == 0){
+        zero.click();
+    }
+    else if (e.key == 1){
+        one.click();
+    }
+    else if (e.key == 2){
+        two.click();
+    }
+    else if (e.key == 3){
+        three.click();
+    }
+    else if (e.key == 4){
+        four.click();
+    }
+    else if (e.key == 5){
+        five.click();
+    }
+    else if (e.key == 6){
+        six.click();
+    }
+    else if (e.key == 7){
+        seven.click();
+    }
+    else if (e.key == 8){
+        eight.click();
+    }
+    else if (e.key == 9){
+        nine.click();
+    }
+    else if (e.key == '+'){
+        addBut.click();
+    }
+    else if (e.key == '*'){
+        multiplyBut.click();
+    }
+    else if (e.key == '/'){
+        divideBut.click();
+    }
+    else if (e.key == '-'){
+        subtractBut.click();
+    }
+    else if (e.key == "Enter" || e.key == "="){
+        equalButton.click();
+    }
+});
+
+const zero = document.querySelector(".zero");
+const one = document.querySelector(".one");
+const two = document.querySelector(".two");
+const three = document.querySelector(".three");
+const four = document.querySelector(".four");
+const five = document.querySelector(".five");
+const six = document.querySelector(".six");
+const seven = document.querySelector(".seven");
+const eight = document.querySelector(".eight");
+const nine = document.querySelector(".nine");
+const addBut = document.querySelector(".add");
+const subtractBut = document.querySelector(".subtract");
+const divideBut = document.querySelector(".divide");
+const multiplyBut = document.querySelector(".multiply");
