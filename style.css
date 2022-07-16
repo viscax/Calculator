@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    flex: 1;
+
+}
+
+
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 3px 1px black;
+    border-radius: 15px;
+    
+}
+
+.container{
+    margin-top: 50px;
+    padding: 15px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 1px 10px 1px black;
+    
+    
+}
+button{
+    margin: 2px;
+    margin-block: 5px;
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    border-style:none;
+}
+
+.clear, .delete{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: rgb(175, 175, 175);
+}
+
+.row1{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.display{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    font-size: 30px;
+    height: 32px;
+    background-color: aliceblue;
+}
+
+.result{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    height: 20px;
+    background-color: aliceblue;
+
+}
+
+.operator, .equal{
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+.number, .decimal{
+    background-color: rgb(110, 110, 110);
+    color: white;
+}
+
+.operator:hover, .equal:hover{
+    background-color: white;
+    color: rgb(255, 149, 0);
+}
+
+.number:hover, .decimal:hover, .delete:hover, .clear:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+.footer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 1px;
+    font-size: 22px;
+    
+}
+
+.screen{
+    margin-bottom: 12px;
+}
